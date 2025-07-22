@@ -1,0 +1,30 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Python (optional, remove if not needed)
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+venv/
+.env
+
+# Jekyll (GitHub Pages)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# Logs
+*.log
+
+# Temporary/OS junk files
+*.swp
+*~
