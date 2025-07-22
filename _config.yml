@@ -1,0 +1,30 @@
+title: Portfolio
+author: Myles 
+description: >-
+  A portfolio
+
+url: "https://mylestym.github.io"
+baseurl: "" # No subpath, since this is a user site
+
+# Theme and plugins
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima-specific settings
+minima:
+  skin: classic
+  social_links:
+    github: mylestym
+    linkedin: your-linkedin
+    twitter: your-twitter-handle
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Other settings
+permalink: pretty
+future: true
