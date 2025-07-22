@@ -1,0 +1,20 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+/vendor
+
+# GitHub Pages: Do NOT commit Gemfile.lock (GitHub builds with its own gems)
+Gemfile.lock
+
+# macOS system files
+.DS_Store
+.Spotlight-V100
+.Trashes
+.AppleDouble
+
+# Optional: Editor folders (uncomment if using)
+#.vscode/
