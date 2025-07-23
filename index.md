@@ -11,7 +11,7 @@ Presented simply — Work and Projects
 
   <p>
     I’m a data scientist and developer with a background in applied data science, business analytics, and ten years of military service.
-    My work emphasizes system clarity, durable implementation, and straight forward design.
+    My work emphasizes system clarity, durable implementation, and straightforward design.
   </p>
 
   <p>
@@ -25,3 +25,15 @@ Presented simply — Work and Projects
   </p>
 
 </div>
+
+---
+
+## Projects
+
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
