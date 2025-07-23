@@ -31,9 +31,27 @@ Presented simply — Work and Projects
 ## Projects
 
 <ul>
-  {% for post in site.posts limit:5 %}
+  {% for post in paginator.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small>
     </li>
   {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+  <nav class="pagination" role="navigation">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="page current">{{ page }}</span>
+      {% else %}
+        <a href="{{ paginator.page_path }}" class="page">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% endif %}
+  </nav>
+{% endif %}
