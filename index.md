@@ -3,4 +3,4 @@ layout: home
 title: Welcome
 ---
 
-Portfolio
+Presented simply: Work and Projects
