@@ -11,6 +11,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate  # Add this to enable pagination plugin
 
 # Minima-specific settings
 minima:
@@ -18,7 +19,7 @@ minima:
   social_links:
     github: mylestym
     linkedin: https://www.linkedin.com/in/myles-tym/
-    twitter: your-twitter-handle
+    twitter: your-twitter-handle  # Replace or remove
 
 # Markdown processor
 markdown: kramdown
