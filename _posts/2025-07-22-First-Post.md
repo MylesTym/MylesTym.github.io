@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: Generating 'handwritten' Digits Using Autoencoder and MNIST data
 date: 2025-07-22
 ---
 
