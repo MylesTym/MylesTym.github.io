@@ -11,11 +11,11 @@ Presented simply — Work and Projects
 
   <p>
     I’m a data scientist and developer with a background in applied data science, business analytics, and ten years of military service.
-    My work emphasizes system clarity, durable implementation, and human-centered design.
+    My work emphasizes system clarity, durable implementation, and straight forward design.
   </p>
 
   <p>
-    I’m currently focused on cloud applications, model deployment, and generative systems that interact with uncertain environments.
+    I’m currently focused on cloud application development, model deployment, and generative systems that interact with uncertain environments.
   </p>
 
   <p>
