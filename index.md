@@ -43,11 +43,11 @@ Presented simply — Work and Projects
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
     {% endif %}
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="page current">{{ page }}</span>
+    {% for page_number in (1..paginator.total_pages) %}
+      {% if page_number == paginator.page %}
+        <span class="page current">{{ page_number }}</span>
       {% else %}
-        <a href="{{ paginator.page_path }}" class="page">{{ page }}</a>
+        <a href="{{ paginator.paginate_path | replace: ':num', page_number }}" class="page">{{ page_number }}</a>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
