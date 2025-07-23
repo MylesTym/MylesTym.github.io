@@ -29,8 +29,10 @@ kramdown:
 permalink: pretty
 future: true
 
+paginate: 5
+paginate_path: "/page:num/"
+
 # Post Display Settings
-limit_posts: 5
 exclude:
   - README.md
   - LICENSE.txt
