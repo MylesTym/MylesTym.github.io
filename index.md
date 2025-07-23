@@ -15,7 +15,7 @@ Presented simply — Work and Projects
   </p>
 
   <p>
-    I’m currently focused on cloud application development, model deployment, and generative systems that interact with uncertain environments.
+    I’m currently focused on cloud application development, model deployment, and generative systems.
   </p>
 
   <p>
