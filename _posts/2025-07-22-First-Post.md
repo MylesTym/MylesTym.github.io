@@ -5,7 +5,7 @@ date: 2025-07-22
 
 # Autoencoder Generator
 
-![Project Main Image](assets/main-image.png)
+![Project Main Image](assets/autoencoder.png)
 
 A modular and extensible Python project implementing convolutional autoencoders using TensorFlow and Keras for image denoising and dimensionality reduction.
 
