@@ -28,3 +28,9 @@ kramdown:
 # Other settings
 permalink: pretty
 future: true
+
+# Post Display Settings
+limit_posts: 5
+exclude:
+  - README.md
+  - LICENSE.txt
