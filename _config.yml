@@ -17,7 +17,7 @@ minima:
   skin: classic
   social_links:
     github: mylestym
-    linkedin: your-linkedin
+    linkedin: https://www.linkedin.com/in/myles-tym/
     twitter: your-twitter-handle
 
 # Markdown processor

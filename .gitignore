@@ -1,30 +1,20 @@
-# macOS system files
-.DS_Store
-
-# VS Code settings
-.vscode/
-*.code-workspace
-
-# Python (optional, remove if not needed)
-__pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
-.venv/
-env/
-venv/
-.env
-
-# Jekyll (GitHub Pages)
+# Jekyll build files
 _site/
+.sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Ruby/Bundler
+/vendor
+
+# GitHub Pages: Do NOT commit Gemfile.lock (GitHub builds with its own gems)
 Gemfile.lock
 
-# Logs
-*.log
+# macOS system files
+.DS_Store
+.Spotlight-V100
+.Trashes
+.AppleDouble
 
-# Temporary/OS junk files
-*.swp
-*~
+# Optional: Editor folders (uncomment if using)
+#.vscode/
