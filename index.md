@@ -4,3 +4,24 @@ title: Welcome
 ---
 
 Presented simply — Work and Projects
+
+<div style="max-width: 700px; margin: 0 auto; padding-top: 1rem;">
+
+  <img src="placeholder" alt="headshot" style="width: 150px; float: right; margin-left: 20px; border-radius: 4px;">
+
+  <p>
+    I’m a data scientist and developer with a background in applied data science, business analytics, and ten years of military service.
+    My work emphasizes system clarity, durable implementation, and human-centered design.
+  </p>
+
+  <p>
+    I’m currently focused on cloud applications, model deployment, and generative systems that interact with uncertain environments.
+  </p>
+
+  <p>
+    <a href="placeholder">Download Resume</a> ·
+    <a href="https://github.com/MylesTym">GitHub</a> ·
+    <a href="placeholder">Contact</a>
+  </p>
+
+</div>
