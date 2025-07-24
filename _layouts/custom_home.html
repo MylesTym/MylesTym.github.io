@@ -1,28 +1,48 @@
+---
+# No front matter needed here
+---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  {%- if site.minima.fonts -%}
+    <link rel="stylesheet" href="{{ site.minima.fonts }}" />
+  {%- endif -%}
+
+  <link rel="stylesheet" href="{{ '/assets/minima.css' | relative_url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
+  {{ content_for_head }}
 </head>
-<body>
 
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <!-- Add other nav links here -->
-    </nav>
-  </header>
+<body class="no-js">
+  <div class="wrapper">
+    <header class="site-header" role="banner">
+      <div class="inner">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        {% if site.description %}
+          <p class="site-description">{{ site.description }}</p>
+        {% endif %}
+      </div>
+    </header>
 
-  <main>
-    {{ content }}
-  </main>
+    <main class="site-main" role="main">
+      {{ content }}
+    </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
-  </footer>
+    <footer class="site-footer" role="contentinfo">
+      <div class="inner">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+      </div>
+    </footer>
+  </div>
 
+  <script>
+    // Add minima's JS if any or leave empty
+    document.body.classList.remove('no-js');
+  </script>
 </body>
 </html>
