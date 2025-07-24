@@ -38,10 +38,14 @@ Presented simply —
     <div class="post-content">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-      <p>
-        {{ post.content | strip_html | truncatewords: 30 }}...
-        <a href="{{ post.url | relative_url }}">Read more</a>
-      </p>
+      {% if post.blurb %}
+        <p>{{ post.blurb }}</p>
+      {% else %}
+        <p>
+          {{ post.content | strip_html | truncatewords: 30 }}...
+          <a href="{{ post.url | relative_url }}">Read more</a>
+        </p>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -63,4 +67,5 @@ Presented simply —
     {% endif %}
   </nav>
 {% endif %}
+
 
