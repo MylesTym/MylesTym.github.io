@@ -31,7 +31,13 @@ permalink: pretty
 future: true
 
 paginate: 5
-paginate_path: "/projects/page:num/"
+paginate_path: # _config.yml
+
+plugins:
+  - jekyll-paginate # Ensure this line is present if not already
+
+paginate: 5 # Set to 5, so 5 projects are listed per page
+paginate_path: "/page:num/" # This tells Jekyll to paginate from the root
 
 # Post Display Settings
 exclude:
