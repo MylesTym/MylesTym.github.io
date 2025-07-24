@@ -15,7 +15,7 @@ plugins:
 
 # Minima-specific settings
 minima:
-  skin: classic
+  skin: dark
   social_links:
     github: mylestym
     linkedin: https://www.linkedin.com/in/myles-tym/
