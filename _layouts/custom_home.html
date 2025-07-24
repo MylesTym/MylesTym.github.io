@@ -9,11 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-  {%- if site.minima.fonts -%}
-    <link rel="stylesheet" href="{{ site.minima.fonts }}" />
-  {%- endif -%}
-
-  <link rel="stylesheet" href="{{ '/assets/minima.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
   {{ content_for_head }}
 </head>
@@ -41,8 +37,8 @@
   </div>
 
   <script>
-    // Add minima's JS if any or leave empty
     document.body.classList.remove('no-js');
   </script>
 </body>
 </html>
+
