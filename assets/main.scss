@@ -1,7 +1,12 @@
+---
+---
+
 @import "minima";
 
-@media screen and (min-width: 992px) {
-  .wrapper {
-    max-width: 90%;
-  }
+/* Override default wrapper max-width */
+.wrapper {
+  max-width: 90% !important;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
