@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: home
 title: Welcome
 ---
 
-Presented simply — Work and Projects
+Presented simply —
 
 <div style="max-width: 700px; margin: 0 auto; padding-top: 1rem;">
 
