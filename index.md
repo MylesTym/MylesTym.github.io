@@ -33,7 +33,7 @@ Presented simply —
 <ul>
   {% for post in paginator.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small>
     </li>
   {% endfor %}
 </ul>
@@ -41,17 +41,29 @@ Presented simply —
 {% if paginator.total_pages > 1 %}
   <nav class="pagination" role="navigation">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      {# If on page 2 or higher, "Previous" links back to the root (for page 1) or a specific /pageX/ #}
+      {% assign prev_url = paginator.previous_page_path %}
+      {% if paginator.previous_page == 1 %}
+        {% assign prev_url = "/" %} {# Special case: previous from page 2 goes to root #}
+      {% endif %}
+      <a href="{{ prev_url | relative_url }}" class="previous">Previous</a>
     {% endif %}
+
     {% for page_number in (1..paginator.total_pages) %}
       {% if page_number == paginator.page %}
         <span class="page current">{{ page_number }}</span>
       {% else %}
-        <a href="{{ paginator.paginate_path | replace: ':num', page_number }}" class="page">{{ page_number }}</a>
+        {# Determine the correct URL for the page number #}
+        {% assign page_url = paginator.paginate_path | replace: ':num', page_number %}
+        {% if page_number == 1 %}
+          {% assign page_url = "/" %} {# Special case: page 1 link points to the root #}
+        {% endif %}
+        <a href="{{ page_url | relative_url }}" class="page">{{ page_number }}</a>
       {% endif %}
     {% endfor %}
+
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
     {% endif %}
   </nav>
 {% endif %}
