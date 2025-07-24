@@ -31,6 +31,7 @@ Presented simply —
 ## Projects
 
 {% for post in paginator.posts %}
+  <pre>post.image: {{ post.image | jsonify }}</pre>
   <div class="post-item">
     {% if post.image %}
       <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
@@ -67,5 +68,3 @@ Presented simply —
     {% endif %}
   </nav>
 {% endif %}
-
-
