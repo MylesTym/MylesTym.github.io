@@ -7,7 +7,7 @@ Presented simply —
 
 <div style="max-width: 700px; margin: 0 auto; padding-top: 1rem;">
 
-  <img src="placeholder" alt="headshot" style="width: 150px; float: right; margin-left: 20px; border-radius: 4px;">
+  <img src="assets/images/logo.png" alt="headshot" style="width: 150px; float: right; margin-left: 20px; border-radius: 4px;">
 
   <p>
     I’m a data scientist and developer with a background in applied data science, business analytics, and ten years of military service.
