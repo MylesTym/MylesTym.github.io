@@ -1,3 +1,5 @@
+<pre>paginator: {{ paginator | jsonify }}</pre>
+
 ---
 layout: home
 title: Welcome
