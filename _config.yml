@@ -6,40 +6,38 @@ description: >-
 url: "https://mylestym.github.io"
 baseurl: "" # No subpath, since this is a user site
 
-# Theme and plugins
+# Theme and Plugins
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate  # Add this to enable pagination plugin
+  - jekyll-paginate
 
-# Minima-specific settings
+# Pagination Settings
+paginate: 5
+paginate_path: "/page:num/"
+
+# Excerpt Settings (Optional)
+excerpt_separator: "<!--more-->"
+
+# Minima Theme Settings
 minima:
   skin: classic
   social_links:
     github: mylestym
     linkedin: https://www.linkedin.com/in/myles-tym/
-    twitter: your-twitter-handle  # Replace or remove
+    twitter: "" # Remove or set your actual handle
 
-# Markdown processor
+# Markdown Settings
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Other settings
+# General Site Settings
 permalink: pretty
 future: true
 
-paginate: 5
-paginate_path: # _config.yml
-
-plugins:
-  - jekyll-paginate # Ensure this line is present if not already
-
-paginate: 5 # Set to 5, so 5 projects are listed per page
-paginate_path: "/page:num/" # This tells Jekyll to paginate from the root
-
-# Post Display Settings
+# Files to Exclude from the Build
 exclude:
   - README.md
   - LICENSE.txt
