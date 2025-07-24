@@ -21,6 +21,9 @@
     <div class="wrapper">
       {{ content }}
 
+      <!-- Separator line between intro and posts -->
+      <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;" />
+
       <!-- Posts Loop START -->
       {% for post in paginator.posts %}
         <div class="post-item">
