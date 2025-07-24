@@ -1,7 +1,7 @@
 ---
 title: Generating 'handwritten' Digits Using Autoencoder and MNIST data
 date: 2025-07-22
-image: /assets/autoencoder.png
+image: assets/autoencoder.png
 blurb: A modular and extensible Python project implementing convolutional autoencoders using TensorFlow and Keras for image denoising and dimensionality reduction.
 ---
 
