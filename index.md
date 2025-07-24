@@ -3,6 +3,12 @@ layout: home
 title: Welcome
 ---
 
+<style>
+  .center-links {
+    text-align: center;
+  }
+</style>
+
 Presented simply —
 
 <div style="max-width: 700px; margin: 0 auto; padding-top: 1rem;">
@@ -18,11 +24,13 @@ Presented simply —
     I’m currently focused on cloud application development, model deployment, and generative systems.
   </p>
 
-  <p>
-    <a href="placeholder">Download Resume</a> ·
-    <a href="https://github.com/MylesTym">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/myles-tym/">LinkedIn</a>
-  </p>
+  <div class="center-links">
+    <p>
+      <a href="placeholder">Download Resume</a> ·
+      <a href="https://github.com/MylesTym">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/myles-tym/">LinkedIn</a>
+    </p>
+  </div>
 
 </div>
 
