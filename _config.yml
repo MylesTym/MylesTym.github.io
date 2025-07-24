@@ -1,5 +1,5 @@
 title: Portfolio
-author: Myles 
+author: Myles
 description: >-
   A portfolio
 
@@ -13,8 +13,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
+# Pagination Settings
 paginate: 5
-paginate_path: "/page:num/
+paginate_path: "/page:num/"
 
 # Excerpt Settings (Optional)
 excerpt_separator: "<!--more-->"
