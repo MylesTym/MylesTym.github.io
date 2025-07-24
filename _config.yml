@@ -31,7 +31,7 @@ permalink: pretty
 future: true
 
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/projects/page:num/"
 
 # Post Display Settings
 exclude:
