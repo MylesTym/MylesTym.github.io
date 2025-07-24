@@ -4,40 +4,26 @@ description: >-
   A portfolio
 
 url: "https://mylestym.github.io"
-baseurl: "" # No subpath, since this is a user site
+baseurl: ""
 
-# Theme and Plugins
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
 
-# Pagination Settings
 paginate: 5
 paginate_path: "/page:num/"
 
-# Excerpt Settings (Optional)
 excerpt_separator: "<!--more-->"
 
-# Minima Theme Settings
-minima:
-  skin: classic
-  social_links:
-    github: mylestym
-    linkedin: https://www.linkedin.com/in/myles-tym/
-    twitter: "" # Remove or set your actual handle
-
-# Markdown Settings
 markdown: kramdown
 kramdown:
   input: GFM
 
-# General Site Settings
 permalink: pretty
 future: true
 
-# Files to Exclude from the Build
 exclude:
   - README.md
   - LICENSE.txt
