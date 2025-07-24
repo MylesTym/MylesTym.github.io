@@ -7,6 +7,35 @@ title: Welcome
   .center-links {
     text-align: center;
   }
+  .post-item {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top of the flex container */
+    margin-bottom: 2em; /* Spacing between posts */
+    border-bottom: 1px solid #eee; /* Separator for posts */
+    padding-bottom: 1.5em; /* Padding above the separator */
+  }
+  .post-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 150px; /* Fixed width for the image */
+    height: auto;
+    margin-right: 1.5em; /* Space between image and text */
+    border-radius: 4px; /* Slightly rounded corners for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  .post-content {
+    flex-grow: 1; /* Allows the content to take up remaining space */
+  }
+  .post-content h3 {
+    margin-top: 0; /* Remove default top margin for heading */
+    margin-bottom: 0.5em; /* Space below heading */
+  }
+  .post-content p {
+    margin-bottom: 0.5em; /* Space below blurb */
+  }
+  .post-date {
+    font-size: 0.9em;
+    color: #555;
+  }
 </style>
 
 Presented simply —
@@ -38,13 +67,22 @@ Presented simply —
 
 ## Projects
 
-<ul>
-  {% for post in paginator.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in paginator.posts %}
+  <div class="post-item">
+    {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+    {% endif %}
+    <div class="post-content">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      {% if post.blurb %}
+        <p>{{ post.blurb }}</p>
+      {% else %}
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
 
 {% if paginator.total_pages > 1 %}
   <nav class="pagination" role="navigation">
