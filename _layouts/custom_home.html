@@ -1,75 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      </div>
-    </header>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body class="no-js">
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {% if site.description %}
+        <p class="site-description">{{ site.description }}</p>
+      {% endif %}
+    </div>
+  </header>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+  <main class="site-main">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
 
-        {{ content }}
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    </div>
+  </footer>
 
-        {% for post in paginator.posts %}
-          <article class="post">
-            <header class="post-header">
-              <h2 class="post-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h2>
-              <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-            </header>
-
-            {% if post.image %}
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-            {% endif %}
-
-            <div class="post-excerpt">
-              {% if post.blurb %}
-                <p>{{ post.blurb }}</p>
-              {% else %}
-                <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-              {% endif %}
-              <p><a href="{{ post.url | relative_url }}">Read more</a></p>
-            </div>
-          </article>
-        {% endfor %}
-
-        {% if paginator.total_pages > 1 %}
-          <nav class="pagination">
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-              {% if page == paginator.page %}
-                <span class="page current">{{ page }}</span>
-              {% else %}
-                <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a>
-              {% endif %}
-            {% endfor %}
-
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-            {% endif %}
-          </nav>
-        {% endif %}
-
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
-      </div>
-    </footer>
-  </body>
+  <script>document.body.classList.remove('no-js');</script>
+</body>
 </html>
+
