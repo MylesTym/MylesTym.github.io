@@ -21,7 +21,7 @@ Presented simply —
   <p>
     <a href="placeholder">Download Resume</a> ·
     <a href="https://github.com/MylesTym">GitHub</a> ·
-    <a href="placeholder">Contact</a>
+    <a href="https://www.linkedin.com/in/myles-tym/">LinkedIn</a>
   </p>
 
 </div>
