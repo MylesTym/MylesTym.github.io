@@ -1,3 +1,4 @@
+
 ---
 layout: home
 title: Welcome
@@ -70,18 +71,10 @@ Presented simply —
     <div class="post-content">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-
-      {% if post.blurb and post.blurb != "" %}
-        <p>{{ post.blurb }}</p>
-      {% else %}
-        {%- comment -%}
-        To manually control excerpt length in a post, use:
-        <!--more-->
-        and set `excerpt_separator: "<!--more-->"` in _config.yml
-        {%- endcomment -%}
-        <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
-
+      <p>
+        {{ post.content | strip_html | truncatewords: 30 }}...
+        <a href="{{ post.url | relative_url }}">Read more</a>
+      </p>
     </div>
   </div>
 {% endfor %}
