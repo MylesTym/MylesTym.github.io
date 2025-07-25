@@ -3,36 +3,48 @@
 
 @import "minima";
 
-/* Overall page layout - increase max width for wider margins */
+/* Base layout: fluid width with max constraints and centered */
 .wrapper,
 .page-content,
 .site-main,
 .site-footer,
 .site-header,
 .main-content {
+  width: 90% !important;
   max-width: 1400px !important;
-  width: 95% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
 
-/* Give more room between content and footer */
-.site-footer {
-  margin-top: 2rem;
+/* Mobile and small tablets: full width with smaller padding */
+@media (max-width: 768px) {
+  .wrapper,
+  .page-content,
+  .site-main,
+  .site-footer,
+  .site-header,
+  .main-content {
+    width: 95% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
-/* Constrain post container */
+/* Post container styling */
 .post-item {
   max-width: 700px;
   margin: 0 auto 3rem auto;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
-/* Constrain and center post images */
+/* Post images */
 .post-item img,
 .post-image {
   max-width: 100%;
@@ -40,26 +52,37 @@
   display: block;
   margin: 0 auto 1rem auto;
   border-radius: 6px;
+  object-fit: contain;
 }
 
-/* Improve post title styling */
+/* Post title styling */
 .post-item h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-/* Improve blurb text readability */
+/* Blurb and paragraph styling */
 .post-item p {
   font-size: 1rem;
   line-height: 1.6;
+  color: #333;
 }
 
-/* Stretch site header for better visual balance */
+/* Site header wrapper */
 .site-header .wrapper {
+  width: 90% !important;
   max-width: 1400px !important;
-  width: 95% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .site-header .wrapper {
+    width: 95% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
