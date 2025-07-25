@@ -3,14 +3,15 @@
 
 @import "minima";
 
-/* Overall page layout */
+/* Overall page layout - increase max width for wider margins */
 .wrapper,
 .page-content,
 .site-main,
 .site-footer,
 .site-header,
 .main-content {
-  max-width: 90% !important;
+  max-width: 1400px !important;
+  width: 95% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 2rem !important;
@@ -27,6 +28,8 @@
   max-width: 700px;
   margin: 0 auto 3rem auto;
   padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 /* Constrain and center post images */
@@ -53,7 +56,10 @@
 
 /* Stretch site header for better visual balance */
 .site-header .wrapper {
-  max-width: 1100px !important;
+  max-width: 1400px !important;
+  width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
