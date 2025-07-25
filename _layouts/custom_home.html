@@ -27,12 +27,14 @@
       <!-- Posts Loop START -->
       {% for post in paginator.posts %}
       <article class="post-item">
-        {% if post.image %}
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image" />
-        {% endif %}
         <div class="post-content">
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image" loading="lazy" />
+          {% endif %}
+
           {% if post.blurb %}
             <p>{{ post.blurb }}</p>
           {% else %}
