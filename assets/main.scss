@@ -3,10 +3,21 @@
 
 @import "minima";
 
-/* Override default wrapper max-width */
-.wrapper {
+/* Override all page layout constraints */
+.wrapper,
+.page-content,
+.site-main,
+.site-footer,
+.site-header,
+.main-content {
   max-width: 90% !important;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Optional: Give more room between footer and content */
+.site-footer {
+  margin-top: 2rem;
 }
