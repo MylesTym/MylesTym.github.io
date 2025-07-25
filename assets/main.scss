@@ -77,6 +77,16 @@
   padding-right: 2rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
+
+  /* Center site title and description */
+  text-align: center !important;
+}
+
+/* Center site title and description */
+.site-title,
+.site-description {
+  display: inline-block;
+  margin: 0.25rem auto;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -102,15 +112,4 @@
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-}
-
-/* Center site title and description in header */
-.site-header .wrapper {
-  text-align: center !important;
-}
-
-.site-title,
-.site-description {
-  display: inline-block;
-  margin: 0.25rem auto;
 }
