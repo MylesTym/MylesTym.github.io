@@ -1,8 +1,6 @@
 ---
 title: Improving an Image Classifier: Regularization, Learning Rates, and Optimizer Tuning
 date: 2025-07-27
-categories: deep-learning mlp mnist
-tags: [deep learning, neural networks, MNIST, dropout, optimizer tuning]
 ---
 
 This project presents a progressive deep learning experiment conducted using the MNIST digit classification dataset. The objective was to design a basic multi-layer perceptron (MLP) architecture and improve its generalization performance across several stages. Using a structured experimental framework, we introduced regularization techniques, learning rate adjustments, and optimizer comparisons to evaluate their impact on model accuracy and validation loss. All visualizations and experiments were conducted in Python using TensorFlow and Keras, and the results were recorded for reproducibility and interpretation.
