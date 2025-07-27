@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   {% seo %}
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
 </head>
 <body class="no-js">
   <header class="site-header">
-    <div class="wrapper">
+    <div class="wrapper" style="text-align: center;">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       {% if site.description %}
         <p class="site-description">{{ site.description }}</p>
@@ -21,39 +21,45 @@
     <div class="wrapper">
       {{ content }}
 
-      <!-- Separator line between intro and posts -->
+      <!-- Separator line -->
       <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;" />
 
       <!-- Posts Loop START -->
       {% for post in paginator.posts %}
-        <div class="post-item">
+      <article class="post-item">
+        <div class="post-content">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+
           {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image" loading="lazy" />
           {% endif %}
-          <div class="post-content">
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-            {% if post.blurb %}
-              <p>{{ post.blurb }}</p>
-            {% else %}
-              <p>{{ post.content | strip_html | truncatewords: 30 }}... <a href="{{ post.url | relative_url }}">Read more</a></p>
-            {% endif %}
-          </div>
+
+          {% if post.blurb %}
+            <p>{{ post.blurb }}</p>
+          {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 30 }}... <a href="{{ post.url | relative_url }}">Read more</a></p>
+          {% endif %}
         </div>
+      </article>
       {% endfor %}
 
       {% if paginator.total_pages > 1 %}
-        <nav class="pagination" role="navigation">
-          {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Previous</a>{% endif %}
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <span class="page current">{{ page }}</span>
-            {% else %}
-              <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a>
-            {% endif %}
-          {% endfor %}
-          {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>{% endif %}
-        </nav>
+      <nav class="pagination" role="navigation">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Previous</a>
+        {% endif %}
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="page current">{{ page }}</span>
+          {% else %}
+            <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
+        {% endif %}
+      </nav>
       {% endif %}
       <!-- Posts Loop END -->
 
