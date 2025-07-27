@@ -1,5 +1,5 @@
 ---
-title: Improving an Image Classifier: Regularization, Learning Rates, and Optimizer Tuning
+title: "Improving an Image Classifier: Regularization, Learning Rates, and Optimizer Tuning"
 date: 2025-07-27
 ---
 
