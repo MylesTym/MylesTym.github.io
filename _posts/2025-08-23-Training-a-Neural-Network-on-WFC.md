@@ -1,5 +1,7 @@
+---
 title: "Training a Neural Network on Wave Function Collapse Generation"
 date: 2025-08-23
+---
 
 # ![Project Title Image](/assets/images/posts/train-on-WFC/title-image.png)
 
@@ -8,8 +10,10 @@ date: 2025-08-23
 This project explores the intersection of generative algorithms and machine learning by training a neural network to predict steps in the Wave Function Collapse (WFC) algorithm. WFC is a constraint-based method commonly used for procedural terrain and map generation. Here, the goal was to teach a model to anticipate the next cell to collapse and the tile to place, given the current state of a 20x20 grid.
 
 # ![WFC Grid Example]
-| ![img1](/assets/images/posts/train-on-WFC/Figure_1.png) | ![img2](/assets/images/posts/train-on-WFC/Figure_10.png) | ![img3](/assets/images/posts/train-on-WFC/Figure_20.png) |
-|---------------------------|---------------------------|---------------------------|
+| ![img1](/assets/images/posts/train-on-WFC/Figure_1.png) 
+  ![img2](/assets/images/posts/train-on-WFC/Figure_10.png) 
+  ![img3](/assets/images/posts/train-on-WFC/Figure_20.png)
+
 
 ## Approach
 
@@ -18,7 +22,7 @@ This project explores the intersection of generative algorithms and machine lear
 
 # ![Code Snippet Example](/assets/images/posts/train-on-WFC/model.png)
 # ![Code Snippet Example](/assets/images/posts/train-on-WFC/WFC.png)
-# ![Code Snippet Example](/assets/images/predictions.png)
+# ![Code Snippet Example](/assets/images/posts/predictions.png)
 
 ## Results & Insights
 
