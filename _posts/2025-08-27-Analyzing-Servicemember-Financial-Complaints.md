@@ -2,7 +2,7 @@
 title: An Analysis of Complaint Data Using Python and NLP
 date: 2025-08-27
 image: 
-blurb: Utilizing 5 years of CFPB complaint data concerning three pillars of financial security, credit cards, car loans (or leases), and mortgages, we explore what how Servicemembers are reflected and what, if any, trends are present...
+blurb: Utilizing 5 years of CFPB complaint data concerning three pillars of financial security, credit cards, car loans (or leases), and mortgages, we explore how Servicemembers are reflected and what, if any, trends are present...
 ---
 
 ## Introduction
@@ -20,7 +20,7 @@ The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints 
 # ![Seasonal Trends](/assets/images/posts/complaint-analysis/complaint_seasonal.png)
 
 ### 2. Product and Issue Frequency
-- The most common products associated with complaints include mortgages, credit cards, and vehicle loans or leases, servicemember or not. Therefor are the three products our analysis focuses on.
+- The most common products associated with complaints include mortgages, credit cards, and vehicle loans or leases, servicemember or not. Therefore are the three products our analysis focuses on.
 - Issue frequency analysis reveals that servicemembers are more likely to report problems related to loan servicing, payment processing, and account transfers compared to the general population.
 
 # ![Issue Types](/assets/images/posts/complaint-analysis/complaint_type.png)
@@ -90,7 +90,7 @@ Over the past five years, servicemember complaints to the CFPB have revealed sev
 
 - Implications for Stakeholders: The findings indicate that servicemembers encounter unique financial challenges, particularly during relocation periods. Financial institutions should improve support and communication for military customers, especially during PCS season. Regulators may wish to monitor companies with high rates of servicemember complaints and consider targeted interventions to address recurring issues.
 
-# ![Company Comparisons](/assets/images/posts/complaint-analysis/complaint_companies.png)
+# ![Company Comparisons](/assets/images/posts/complaint-analysis/complaint_monthly.png)
 
 ---
 
