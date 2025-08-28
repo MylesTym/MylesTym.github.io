@@ -23,7 +23,7 @@ The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints 
 - The most common products associated with complaints include mortgages, credit cards, and vehicle loans or leases, servicemember or not. Therefore are the three products our analysis focuses on.
 - Issue frequency analysis reveals that servicemembers are more likely to report problems related to loan servicing, payment processing, and account transfers compared to the general population.
 
-# ![Issue Types](/assets/images/posts/complaint-analysis/complaint_type.png)
+# ![Issue Types](/assets/images/posts/complaint-analysis/complaints_ranked.png)
 
 ### 3. Comparative Analysis and Normalization
 - When normalized for group size, certain issues and companies are disproportionately represented in servicemember complaints.
@@ -90,7 +90,7 @@ Over the past five years, servicemember complaints to the CFPB have revealed sev
 
 - Implications for Stakeholders: The findings indicate that servicemembers encounter unique financial challenges, particularly during relocation periods. Financial institutions should improve support and communication for military customers, especially during PCS season. Regulators may wish to monitor companies with high rates of servicemember complaints and consider targeted interventions to address recurring issues.
 
-# ![Company Comparisons](/assets/images/posts/complaint-analysis/complaint_monthly.png)
+# ![Company Comparisons](/assets/images/posts/complaint-analysis/complaints_monthly.png)
 
 ---
 
