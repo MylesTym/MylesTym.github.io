@@ -22,7 +22,7 @@ The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints 
 # ![Seasonal Trends](/assets/images/posts/complaint-analysis/complaint_seasonal.png)
 
 ### 2. Product and Issue Frequency
-- The most common products associated with complaints include mortgages, credit cards, and vehicle loans or leases, servicemember or not. Therefore are the three products our analysis focuses on.
+- The most common products associated with complaints include mortgages, credit cards, and vehicle loans or leases, servicemember or not. Therefore these are the three products our analysis focuses on.
 - Issue frequency analysis reveals that servicemembers are more likely to report problems related to loan servicing, payment processing, and account transfers compared to the general population.
 
 # ![Issue Types](/assets/images/posts/complaint-analysis/complaints_ranked.png)
@@ -52,7 +52,6 @@ The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints 
 - I placed my mortgage into forbearance in XXXX oXXXX XXXX and missed 7 total payments. XXXX of XXXX was the beginning of XXXX and the forbearance guidelines were not fully established by any company. I...
 - I was approved for tax exemption in XX/XX/2022, retroactively, the extra money that was paid for tax hasn't been returned to me. 
 
-I caught XXXX in XX/XX/2022. I requested a forbearance due to other m...
 
 ## Cluster 1 sample complaints:
 - The problem is with fraudulent charges that were made on my Ally XXXX  acct. ending in XXXX, in XXXX, XXXX, for {$14.00}, {$21.00}, {$19.00}, and {$18.00}, totaling {$73.00}, and on XX/XX/XXXX for {$1...
