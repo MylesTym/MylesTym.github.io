@@ -6,7 +6,9 @@ blurb: Utilizing 5 years of CFPB complaint data concerning three pillars of fina
 ---
 
 ## Introduction
-This report presents an in-depth analysis of consumer complaints submitted to the Consumer Financial Protection Bureau (CFPB) over the past five years (1-1-2020 - 1-1-2025), with a particular focus on complaints tagged as 'servicemember.' The objective is to uncover patterns, trends, and unique challenges faced by servicemembers in the financial marketplace, using advanced data science and natural language processing techniques. The findings are intended for portfolio demonstration and professional presentation.
+This report presents an in-depth analysis of consumer complaints submitted to the Consumer Financial Protection Bureau (CFPB) over the past five years (1-1-2020 - 1-1-2025), with a particular focus on complaints tagged as 'servicemember.' The objective is to uncover patterns, trends, and unique challenges faced by servicemembers in the financial marketplace, using advanced data science and natural language processing techniques. The findings are intended for portfolio demonstration and professional presentation. In total, this report analyzed 140,222 individual reports spanning the previously stated time frame.
+
+[Exploratory Analysis](/assets/images/posts/complaint-analysis/complaint_code_snippet.png)
 
 ## Data Preparation and Segmentation
 The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints were segmented into two groups: those tagged as 'servicemember' and those from the general population. This separation enabled direct comparison and ensured that insights were specific to the experiences of servicemembers.
