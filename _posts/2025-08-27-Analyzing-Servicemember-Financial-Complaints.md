@@ -133,9 +133,9 @@ Over the past five years, servicemember complaints to the CFPB have revealed sev
 
 # ![Company Comparisons](/assets/images/posts/complaint-analysis/complaints_monthly.png)
 
-[GitHub Repository](https://github.com/MylesTym/complaint_review)
+- [GitHub Repository](https://github.com/MylesTym/complaint_review)
 
-[Data Source](https://www.consumerfinance.gov/data-research/consumer-complaints/search/?consumer_consent_provided=Consent%20provided&date_received_max=2025-01-01&date_received_min=2020-01-01&has_narrative=true&page=1&product=Mortgage&product=Credit%20card&product=Vehicle%20loan%20or%20lease&searchField=all&size=25&sort=created_date_desc&tab=List)
+- [Data Source](https://www.consumerfinance.gov/data-research/consumer-complaints/search/?consumer_consent_provided=Consent%20provided&date_received_max=2025-01-01&date_received_min=2020-01-01&has_narrative=true&page=1&product=Mortgage&product=Credit%20card&product=Vehicle%20loan%20or%20lease&searchField=all&size=25&sort=created_date_desc&tab=List)
 
 
 
