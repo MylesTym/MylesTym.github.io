@@ -13,6 +13,46 @@ This report presents an in-depth analysis of consumer complaints submitted to th
 ## Data Preparation and Segmentation
 The dataset was rigorously cleaned to ensure accuracy and relevance. Complaints were segmented into two groups: those tagged as 'servicemember' and those from the general population. This separation enabled direct comparison and ensured that insights were specific to the experiences of servicemembers.
 
+## Methodology Breakdown: CFPB Complaint Analysis
+
+### 1. Data Acquisition
+- Obtain raw CFPB complaint data in CSV format.
+- Store data in the `data/` directory for reproducibility.
+
+### 2. Data Cleaning & Segmentation
+- Convert date fields to datetime objects and filter out invalid entries.
+- Remove complaints with missing narratives.
+- Segment data into two groups:
+  - Servicemember complaints (tagged)
+  - General population complaints (untagged)
+
+### 3. Exploratory Data Analysis (EDA)
+- Visualize complaint volume over time for both groups.
+- Identify top products and issues by complaint frequency.
+- Examine seasonal trends, including PCS (Permanent Change of Station) season.
+
+### 4. Comparative Analysis
+- Normalize complaint rates per 1,000 for fair comparison between groups.
+- Compare issue and company-level complaint rates.
+- Visualize differences using bar plots and time series.
+
+### 5. Narrative Trend Analysis
+- Preprocess complaint narratives for consistency.
+- Perform n-gram frequency analysis to identify common terms and phrases.
+- Apply topic modeling (LDA) to uncover dominant themes in narratives.
+
+### 6. Semantic Clustering & Visualization
+- Generate sentence embeddings using a transformer model.
+- Cluster complaint narratives using KMeans.
+- Visualize clusters with t-SNE for interpretability.
+- Display sample complaints from each cluster for context.
+
+### 7. Documentation & Portfolio Presentation
+- Summarize findings in markdown and README files.
+- Highlight actionable insights and technical workflow.
+- Ensure code and documentation are portfolio-ready.
+
+
 ## Key Findings
 
 ### 1. Complaint Volume and Temporal Trends
