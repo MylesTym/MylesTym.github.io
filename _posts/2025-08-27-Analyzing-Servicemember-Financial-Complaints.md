@@ -131,6 +131,12 @@ Over the past five years, servicemember complaints to the CFPB have revealed sev
 
 - Implications for Stakeholders: The findings indicate that servicemembers encounter unique financial challenges, particularly during relocation periods. Financial institutions should improve support and communication for military customers, especially during PCS season. Regulators may wish to monitor companies with high rates of servicemember complaints and consider targeted interventions to address recurring issues.
 
+
+## Analysis Limitations
+- Dataset limited to five year period.
+- Dataset limited to three products (Mortgages, credit cards, car loans (and leases)).
+- No geographic analysis conducted and compared with military installation locations.
+
 # ![Company Comparisons](/assets/images/posts/complaint-analysis/complaints_monthly.png)
 
 - [GitHub Repository](https://github.com/MylesTym/complaint_review)
