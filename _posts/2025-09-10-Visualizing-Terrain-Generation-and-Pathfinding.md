@@ -1,5 +1,5 @@
 ---
-title: An Explortation of Perlin Noise Terrain Generation and Pathfinding
+title: An Exploration of Perlin Noise Terrain Generation and Pathfinding
 date: 2025-09-10
 image: assets/images/posts/visualizing-terrain/mesh-terrain.png
 blurb: This project was created as a demonstration and learning exercise to explore procedural terrain generation, pathfinding algorithms, and advanced data visualization in Python. It is designed to help understand and communicate key concepts in algorithmic problem solving, spatial data processing, and scientific visualization...
