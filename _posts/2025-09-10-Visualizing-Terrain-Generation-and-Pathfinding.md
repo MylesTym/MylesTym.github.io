@@ -69,7 +69,6 @@ This project was created as a demonstration and learning exercise to explore pro
 - Interactive 3D mesh with pythreejs, including colored terrain, markers, and path overlays.
 # ![Terrain Waypoints](/assets/images/posts/visualizing-terrain/2d-terrain-with-path.png)
 
-<video src="https://github.com/user-attachments/assets/1f93a592-b1d3-495b-9627-5c7225552d3d" controls style="max-width: 730px;"></video>
 
 ---
 
