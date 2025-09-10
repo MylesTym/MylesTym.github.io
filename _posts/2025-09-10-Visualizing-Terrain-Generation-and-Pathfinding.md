@@ -97,4 +97,4 @@ This project was created as a demonstration and learning exercise to explore pro
 
 **Project by MylesTym**
 
-[LinkedIn](https://www.linkedin.com/in/myles-tym/) | [GitHub](https://github.com/MylesTym)
+[LinkedIn](https://www.linkedin.com/in/myles-tym/) | [GitHub](https://github.com/MylesTym/aStar_pathfinding)
